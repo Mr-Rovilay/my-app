@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+span {
+  color: var(--main-color);
+}
+
+h1 {
+  padding-top: 15rem;
+  text-align: center;
+}
+
+:root {
+  --big-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--big-color);
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar a {
+  font-size: 1.3rem;
+  margin-left: 4rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.background {
+  background-image: url(images/web-consultancy_twkc06.jpg);
+  width: 100%;
+  height: 50rem;
+  position: fixed;
+  margin-top: 6rem;
+}
+
+.containe {
+  width: 35%;
+  margin-left: 52rem;
+  margin-top: 12rem;
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+  padding: 34px;
+}
+
+h2 {
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 1rem 2.8rem;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #0ef;
+}
+
+/* about section */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+
+  background: aqua;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+.about:hover {
+  animation-name: background;
+  animation-duration: 4s;
+}
+@keyframes background {
+  0% {
+    background-color: aqua;
+  }
+  25% {
+    background-color: #9a1663;
+  }
+  50% {
+    background-color: #e0144c;
+  }
+  75% {
+    background-color: #ff5858;
+  }
+  100% {
+    background-color: #ff97c1;
+  }
+}
+
+.about-img img {
+  width: 35vw;
+  margin: 1px;
+  border: 4px solid var(--main-color);
+  border-radius: 25%;
+}
+.about-img {
+  width: 110%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.3;
+}
+.about-content h3 {
+  font-size: 2.6rem;
+}
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.heading {
+  padding-bottom: 2rem;
+}
+.btn-primary {
+  margin-left: 20px;
+}
+/* about section end */
+/* contact section */
+
+.contact {
+  width: 100%;
+  height: 50rem;
+  position: fixed;
+  margin-top: 6rem;
+  background-image: url(images/TeamBG_sgpnbd.jpg);
+}
+
+.contact form {
+  max-width: 60rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+  margin-top: 1rem;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+textarea {
+  height: 23rem;
+  border-style: none;
+}
+
+.container {
+  padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+.card {
+  margin-bottom: 23px;
+}
+.btn-primary {
+  margin-left: -2px;
+}
